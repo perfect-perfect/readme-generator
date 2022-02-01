@@ -31,7 +31,7 @@ function renderLicenseLink(license) {
 function renderQuestions(username, email) {
   return `You can reach me through GitHub or E-mail
 
-  [GitHub Profile](www.github.com/${username}/)
+  [GitHub Profile](https://www.github.com/${username}/)
 
   ${email}`
 }
@@ -42,7 +42,7 @@ const tableCheck = table => {
   return `
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contibuting)
+  - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
   - [License](#license)`;

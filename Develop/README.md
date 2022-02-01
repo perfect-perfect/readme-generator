@@ -2,7 +2,7 @@
   # README Generator 
     
   ## Description
-  Create a professional README using by responding to prompts in the terminal
+  A fast and effective way to create professional quality README's.
 
   ![githublicense](https://shields.io/badge/license-MIT-blue.svg)
   
@@ -10,29 +10,29 @@
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Contributing](#contibuting)
+  - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
   - [License](#license)
   
   ## Installation
-  First clone the repo. Then in the terminal from the root directory run npm install to download the necessary dependencies. Then, again from the root directory, run node index to begin prompts. Respond to prompts and the README will be generated
+  First clone the repo. Second make sure you download all the necessay NPM's uisng the command line "npm i". Finally, install inquirer using the command line "npm install inquirer".
     
   ## Usage
-  Respond to prompts. this readme was generated using this application.
+  Simply answer the prompts and a professional quality README will be generated.
 
-  [Link to Video](https://watch.screencastify.com/v/KSsWXJIIXFwcN5WF5snh)
+  [Link to Video](https://watch.screencastify.com/v/MkmwpVjQFN1e4QOzqbQS)
 
   ## Contributing
-  Fork and push commits
+  To contribute, fork the repository and submit your commits for approval.
 
   ## Tests
-  No test
+  No test.
   
   ## Questions
   You can reach me through GitHub or E-mail
 
-  [GitHub Profile](www.github.com/perfect-perfect/)
+  [GitHub Profile](https://www.github.com/perfect-perfect/)
 
   gilberto.j.covarrubias@gmail.com
     
