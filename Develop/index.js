@@ -1,32 +1,10 @@
 
-// this applicaton will be invoked by using node index.js
-
-// TODO: Include packages needed for this application
-
-// TODO: Create an array of questions for user input
-const questions = [];
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
-
-
-//*********** NOTES *************//
-// because this application will not be deployed, create a walk through video that displays its functionality. Revisit 2.2.4//
-// you'll need to submit a link to the video and add it to the README of your project
-
+// packages needed
 const inquirer = require('inquirer');
-
 const fs = require('fs');
-
 const generateMarkdown = require('./utils/generateMarkdown');
 
-
+// Uses inquirer to gather information from the user
 const promptReadMe = () => {
     return inquirer.prompt([
         {
@@ -89,11 +67,11 @@ const promptReadMe = () => {
     ])
 };
 
-
+// Initializes the application
 promptReadMe()
     .then(readMeData => {
         const pageMarkdown = generateMarkdown(readMeData)
-
+        // writes function to the file
         fs.writeFile('README.md', pageMarkdown, err => {
             if (err) throw err;
             console.log('success!')

@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Creates license badge
 function renderLicenseBadge(license) {
   if(license !== 'None') {
     return `![githublicense](https://shields.io/badge/license-${license}-blue.svg)`
@@ -8,8 +7,7 @@ function renderLicenseBadge(license) {
 
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Creates the link to the license that was chosen
 function renderLicenseLink(license) {
   if ( license == 'MIT') {
     return `[MIT License](https://choosealicense.com/licenses/mit/)`
@@ -29,26 +27,7 @@ function renderLicenseLink(license) {
   
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//   if ( license == 'MIT') {
-//     return `[Link to License](https://choosealicense.com/licenses/mit/)`
-//   }
-//   else if (license == 'APACHE2.0') {
-//     return `[Link to License](https://choosealicense.com/licenses/apache-2.0/)`
-//   }
-//   else if (license == 'GPL3.0') {
-//     return `[Link to License](https://choosealicense.com/licenses/gpl-3.0/)`
-//   }
-//   else if (license == 'BSD3') {
-//     return `[Link to License](https://choosealicense.com/licenses/bsd-3-clause/)`
-//   }
-//   else if (license == 'None') {
-//     return ``
-//   }
-// }
-
+// Creates Question section
 function renderQuestions(username, email) {
   return `You can reach me through GitHub or E-mail
 
@@ -57,7 +36,7 @@ function renderQuestions(username, email) {
   ${email}`
 }
 
-
+// Creates table of Contents
 const tableCheck = table => {
   if(table) {
   return `
@@ -72,8 +51,8 @@ const tableCheck = table => {
 
 }
 
+// Exports this function that is a template literal
 module.exports = templateData => {
-  // console.log(templateData);
 
   return `
   # ${templateData.title} 
